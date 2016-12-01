@@ -1,2 +1,2 @@
 # perseus
-Centralizes distributed debug messages for killing monsters and all-around badass
+Centralizes distributed debug messages for killing monsters and is an all-around badass
