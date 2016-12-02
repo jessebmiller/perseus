@@ -42,7 +42,7 @@ func TestSend(t *testing.T) {
 		defer server.Close()
 
 		// configure the environment to use that server
-		os.Setenv("PERSEUS_URL", server.URL)
+		os.Setenv("PERSEUS_HOST", server.URL)
 		send(tset.in)
 
 		// confirm that a call happened

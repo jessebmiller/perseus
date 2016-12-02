@@ -17,7 +17,7 @@ func send(message string) {
 		// someonee turned perseus off
 		return
 	}
-	host := cfg.Get("PERSEUS_URL", "http://perseus")
+	host := cfg.Get("PERSEUS_HOST", "http://perseus")
 	ns := cfg.Get("PERSEUS_NS", "/default")
 	vals := url.Values{"message": {message}}
 	http.Post(
