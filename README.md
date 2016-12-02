@@ -14,3 +14,21 @@ watching pring statements.
 
 The server accepts messages sent by the library and puts them into a nice web
 page.
+
+# Use
+
+Install a library (right now only for gophers).
+
+    import "github.com/oaodev/perseus/libs/go/perseus"
+
+and call Send
+
+    perseus.Send("message")
+
+The default configuration assumes that a perseus server is running on
+`http://perseus` and will send messages to the namespace `/default`.
+
+Setting environment variables can change this behavior. For example:
+
+    PERSEUS_URL=http://myperseus.com:2120
+    PERSEUS_NS=/my-custom-namespace
