@@ -1,0 +1,6 @@
+set -e
+
+docker run -v `pwd`:`docker run golang:alpine pwd` golang:alpine gofmt -s -w .
+docker build -t percius:local .
+echo "Percius will be on $(docker-machine ip $DOCKER_MACHINE_NAME):2120"
+docker run -p 2120:2120 percius:local
