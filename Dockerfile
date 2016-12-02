@@ -9,7 +9,7 @@ workdir /go/src/perseus
 run go get -u github.com/alecthomas/gometalinter
 run gometalinter --install
 
-copy ./main.go /go/src/perseus
+copy ./requirements.go /go/src/perseus
 run go-wrapper download
 
 run apk del git
