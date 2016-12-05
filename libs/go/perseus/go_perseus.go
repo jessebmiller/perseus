@@ -12,6 +12,11 @@ func Send(message string) {
 	go send(message)
 }
 
+// Sendf sends a formatted message
+func Sendf(format string, a ...interface{}) {
+	go send(fmt.Sptintf(format, a...))
+}
+
 func send(message string) {
 	if cfg.Get("PERSEUS_SEND", "true") == "false" {
 		// someonee turned perseus off

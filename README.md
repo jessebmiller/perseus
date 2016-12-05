@@ -17,13 +17,26 @@ page.
 
 # Use
 
-Install a library (right now only for gophers).
+Install a library
 
+    // in go
     import "github.com/oaodev/perseus/libs/go/perseus"
+
+    # for python
+    $ pip install git+https://github.com/OAODEV/perseus.git
+    $ python
+    >>> from pyrseus import send, sendf
 
 and call Send
 
+    // in go
     perseus.Send("message")
+
+    # in python
+    >>> send("message")
+
+    # formatted message
+    >>> sendf("X is: {}", x)
 
 The default configuration assumes that a perseus server is running on
 `http://perseus` and will send messages to the namespace `/default`.
