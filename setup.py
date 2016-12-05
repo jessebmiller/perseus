@@ -8,7 +8,7 @@ setup(
     description = "python perseus client",
     license = "MIT",
     url = "http://github.com/oaodev/perceus",
-    package_dir = {"": "libs/python/pyrseus"},
+    package_dir = {"": "libs/python"},
     packages = ["pyrseus"],
     long_description = "just a python perseus client",
 )
