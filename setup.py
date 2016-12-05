@@ -10,5 +10,5 @@ setup(
     url = "http://github.com/oaodev/perceus",
     package_dir = {"": "libs/python/pyrseus"},
     packages = ["pyrseus"],
-    long_description = "jus a python perseus client",
+    long_description = "just a python perseus client",
 )
