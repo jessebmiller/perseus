@@ -1,4 +1,4 @@
-import threading
+import threading, os
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 

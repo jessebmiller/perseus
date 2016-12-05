@@ -1,4 +1,4 @@
 # package
 
-import send
-import sendf
+from pyrseus import send, sendf
+
