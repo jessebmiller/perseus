@@ -7,7 +7,8 @@ setup(
     author_email = "jesse.miller@adops.com",
     description = "python perseus client",
     license = "MIT",
-    url = "http://github.com/oaodev/perceus/libs/python/pyrseus",
-    packages = ["libs/python/pyrseus"],
+    url = "http://github.com/oaodev/perceus",
+    package_dir = {"": "libs/python/"}
+    packages = ["pyrseus"],
     long_description = "jus a python perseus client",
 )
