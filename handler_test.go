@@ -31,7 +31,7 @@ func TestRequestResponse(t *testing.T) {
 			"a\nb\nc",
 		},
 		{
-			httptest.NewRequest("POST", "/abc?message=d", nil),
+			httptest.NewRequest("POST", "/abc?message=new", nil),
 			MapStore{
 				map[string][]string{
 					"/abc": {"a", "b", "c"},
@@ -39,10 +39,10 @@ func TestRequestResponse(t *testing.T) {
 			},
 			MapStore{
 				map[string][]string{
-					"/abc": {"a", "b", "c", "d"},
+					"/abc": {"new", "a", "b", "c"},
 				},
 			},
-			"1",
+			"3",
 		},
 	}
 

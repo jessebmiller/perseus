@@ -2,6 +2,7 @@ package perseus
 
 import (
 	"bytes"
+	"fmt"
 	"github.com/jessebmiller/cfg"
 	"net/http"
 	"net/url"
@@ -14,7 +15,7 @@ func Send(message string) {
 
 // Sendf sends a formatted message
 func Sendf(format string, a ...interface{}) {
-	go send(fmt.Sptintf(format, a...))
+	go send(fmt.Sprintf(format, a...))
 }
 
 func send(message string) {

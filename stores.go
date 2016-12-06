@@ -16,6 +16,6 @@ func (store MapStore) get(ns string) []string {
 }
 
 func (store MapStore) add(ns string, message string) error {
-	store.m[ns] = append(store.m[ns], message)
+	store.m[ns] = append([]string{message}, store.m[ns]...)
 	return nil
 }
